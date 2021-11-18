@@ -10,7 +10,9 @@ def login_with_spotify
             redirect_uri: "http://localhost:3000/auth/spotify/callback",
             scope: "playlist-modify-public playlist-read-collaborative user-library-read"
         }
-        redirect_to spotify_url = url + "?" +  query_params.to_query
+        redirect_to url + "?" +  query_params.to_query
 end 
+
+
 
 end
